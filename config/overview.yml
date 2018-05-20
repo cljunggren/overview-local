@@ -12,7 +12,9 @@ services:
       - overview.env
 
   overview-web:
-    image: overview/overview-web:${OVERVIEW_VERSION}
+    #image: overview/overview-web:${OVERVIEW_VERSION}
+    #Fix me later
+    image: prashanthvptn/overview-web
     volumes:
       - overview-blob-storage:/var/lib/overview/blob-storage
     env_file:
